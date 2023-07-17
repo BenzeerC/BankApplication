@@ -47,19 +47,22 @@ namespace BankApplication
             return RoleId;
         }
 
-        public List<User> GetUsers() { 
+        public List<User> GetUsers() 
+        { 
         return users;   
         }
 
-        public void Logout(User user)
+        public void Logout()
         {
-            user.UserId = user.UserId;
-           
+            User user1 = new User();
+            foreach (User user in users)
+            {
+                user.RoleId.ToString().Remove(user.RoleId);
+                Console.WriteLine($"Enter your UserId for logout:{user1.UserId}");
+                Console.WriteLine("Log out successfuly");
+            }
         }
 
-        internal int Login(object userId, object password)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
