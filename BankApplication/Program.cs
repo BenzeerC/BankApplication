@@ -37,7 +37,7 @@ namespace BankApplication
                 {
                     Console.Write("Welcome Admin\n");
                     Console.Write("\n1: Add User");
-                    Console.Write("\n2: LogOut");
+                    Console.Write("\n2: LogOut\n");
                     int op = Convert.ToInt32(Console.ReadLine());
 
 
